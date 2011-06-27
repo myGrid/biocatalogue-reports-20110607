@@ -1,0 +1,160 @@
+Custom Queries
+==============
+
+---
+
+1. Total number of passed and failed tests
+------------------------------------------
+
+SQL:
+
+SELECT result, count(*) as number
+FROM
+(select case when result >= 1 then "Failed"
+             else "Passed"
+         end as result
+FROM test_results
+WHERE 1
+) AS  status
+GROUP BY result
+
+Results:
+
+"Failed";"266,366"
+"Passed";"2,372,598"
+
+= 11.23% tests failed
+
+---
+
+2. Counts of the names of SOAP Inputs
+-------------------------------------
+
+SQL:
+
+SELECT name, COUNT( * ) AS count
+FROM  `soap_inputs` 
+GROUP BY name
+ORDER BY count DESC 
+
+Results:
+    
+See file "soap_input_names.pdf"
+
+---
+
+3. Counts of the names of SOAP Outputs
+--------------------------------------
+
+SQL:
+
+SELECT name, COUNT( * ) AS count
+FROM  `soap_outputs` 
+GROUP BY name
+ORDER BY count DESC 
+
+Results:
+
+See file "soap_output_names.pdf"
+
+---
+
+4. (From Alan) How many of the SOAP Operations take "parameters" as the input and "parameters" as the output
+------------------------------------------------------------------------------------------------------------
+
+SQL:
+
+SELECT COUNT(*)
+FROM (
+    SELECT DISTINCT(soap_operations.id)
+    FROM soap_operations
+    INNER JOIN soap_inputs ON soap_operations.id = soap_inputs.soap_operation_id
+    INNER JOIN soap_outputs ON soap_operations.id = soap_outputs.soap_operation_id
+    WHERE soap_inputs.name = "parameters" AND soap_outputs.name = "parameters"
+) AS so_ids
+
+Results:
+
+1645 out of 19008 total SOAP Operations
+= 11.6%
+
+---
+
+5. Users over time
+-------------------------------
+
+SQL:
+
+SET @runtot:=0;
+SELECT q1.e as year, q1.d as month, q1.c as count, (@runtot := @runtot + q1.c) AS cumulative
+FROM
+   (SELECT YEAR(activated_at) as e, MONTHNAME(activated_at) AS d, COUNT(*) as c
+	FROM users
+	WHERE activated_at IS NOT NULL
+	GROUP BY YEAR(activated_at), MONTH(activated_at) 
+	ORDER BY YEAR(activated_at), MONTH(activated_at) ASC) AS q1
+
+Results:
+
+See file "users_over_time.txt"
+
+---
+
+6. Services over time
+---------------------
+
+SQL:
+
+SET @runtot:=0;
+SELECT q1.e as year, q1.d as month, q1.c as count, (@runtot := @runtot + q1.c) AS cumulative
+FROM
+   (SELECT YEAR(created_at) as e, MONTHNAME(created_at) AS d, COUNT(*) as c
+  FROM services
+  GROUP BY YEAR(created_at), MONTH(created_at) 
+  ORDER BY YEAR(created_at), MONTH(created_at) ASC) AS q1
+
+Results:
+
+See file "services_over_time.txt"
+
+---
+
+7. Annotations over time (by all sources)
+----------------------------------------
+
+SQL:
+
+SET @runtot:=0;
+SELECT q1.e as year, q1.d as month, q1.c as count, (@runtot := @runtot + q1.c) AS cumulative
+FROM
+   (SELECT YEAR(created_at) as e, MONTHNAME(created_at) AS d, COUNT(*) as c
+  FROM annotations
+  GROUP BY YEAR(created_at), MONTH(created_at) 
+  ORDER BY YEAR(created_at), MONTH(created_at) ASC) AS q1
+
+Results:
+
+See file "annotations_all_over_time.txt"
+
+---
+
+8. Annotations over time (by Users only)
+----------------------------------------
+
+SQL:
+
+SET @runtot:=0;
+SELECT q1.e as year, q1.d as month, q1.c as count, (@runtot := @runtot + q1.c) AS cumulative
+FROM
+   (SELECT YEAR(created_at) as e, MONTHNAME(created_at) AS d, COUNT(*) as c
+  FROM annotations
+  WHERE source_type = "User"
+  GROUP BY YEAR(created_at), MONTH(created_at) 
+  ORDER BY YEAR(created_at), MONTH(created_at) ASC) AS q1
+
+Results:
+
+See file "annotations_users_over_time.txt"
+
+---
+

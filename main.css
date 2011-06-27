@@ -1,0 +1,69 @@
+#container {
+  width: 800px; 
+  margin: 1em auto; 
+  background-color: #FFF; 
+  border: 1px solid #DDD; 
+  padding: 1em 1.5em;
+}
+
+h2, h3 {
+  text-align: center;
+}
+h2 {
+  margin: 0.6em 0 0.8em 0;
+  font-size: 138.5%;
+}
+h3 {
+  margin: 0;
+  font-size: 116%;
+  margin-bottom: 1em;
+}
+.operations_quick_browse_box {
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+  font-size: 138.5%;
+  text-align: center;
+  padding: 0.2em 1em 0.3em 1em;
+  line-height: 1.5;
+}
+.box_grouped_info {
+  background-color: #F4F1F9;
+  margin-bottom: 2em;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  line-height: 1.5;
+}
+.biocat_table {
+  margin: 0 auto 0.7em auto;
+}
+.biocat_table td {
+  background-color: #FFF;
+  text-align: center;
+}
+.box_stat {
+  text-align: center;
+  border: 1px solid #DDD;
+  background-color: #FFF;
+  padding: 0.7em 0.4em 0.7em 0.4em;
+  margin-bottom: 1em;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+.box_stat .num {
+  font-size: 197%;
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  color: #990000;
+}
+.box_stat .label {
+  color: #666;
+  text-align: center;
+  font-weight: bold;
+}

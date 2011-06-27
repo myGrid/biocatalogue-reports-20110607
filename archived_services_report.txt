@@ -1,0 +1,21 @@
+Archived Services Report
+========================
+
+153 out of 2055 services are archived
+
+
+By Providers:
+
+                                     Provider	Count
+---------------------------------------------	-----
+      Virginia Bioinformatics Institute (VBI)	105
+      European Bioinformatics Institute (EBI)	 20
+                                 iCapture Lab	 18
+                DNA Data Bank of Japan (DDBJ)	  3
+Center for Biological Sequence Analysis (CBS)	  2
+                                    SOATRADER	  1
+                      University of Wuerzburg	  1
+                 Medical University Innsbruck	  1
+                                     TexFlame	  1
+                                       Nactem	  1
+

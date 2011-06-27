@@ -1,0 +1,475 @@
+<html>
+  <head>
+    <title> BioCatalogue Reports - June 2011 (Data from 2011-06-07)</title>
+    <link href='http://www.biocatalogue.org/favicon.ico' rel='icon' type='image/x-icon' />
+    <link href='http://www.biocatalogue.org/favicon.ico' rel='shortcut icon' type='image/x-icon' />
+    <link href='http://sandbox.biocatalogue.org/stylesheets/base_packaged.css' media='screen' rel='stylesheet' type='text/css' />
+    <link href='main.css' media='screen' rel='stylesheet' type='text/css' />
+
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+    <style media="screen" type="text/css">
+      
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <h1> BioCatalogue Stats and Reports - June 2011</h1>
+
+      <h3 class="faded">
+      Using data from
+      <a href="http://www.biocatalogue.org" target="_blank" style="color: inherit;">http://www.biocatalogue.org</a>
+      up to 2011-06-07
+      </h3>
+
+      <br/>
+
+      <div class="operations_quick_browse_box">
+        <span class="entry">
+          <a href="#counts">Overall Counts</a>
+        </span>
+        <span class="entry">
+          <a href="#reports">Reports</a>
+        </span>
+        <span class="entry">
+          <a href="#stats">Notable Stats</a>
+        </span>
+        <span class="entry">
+          <a href="#graphs">Graphs</a>
+        </span>
+      </div>
+
+      <div>
+        <div style="width: 49%; float: left;">
+          <div id="counts" class="box_grouped_info">
+            <h2>Overall Counts</h2>
+            <p class="center">
+              <img src="stats_total_counts.png" alt="stats" />
+            </p>
+          </div>
+        </div>
+
+        <div style="width: 49%; float: right;">
+          <div id="reports" class="box_grouped_info center">
+            <h2>Reports</h2>
+
+            <a href="service_annotation_report.html" target="_blank" class="button_slim">Service Metadata Levels</a>
+            <br/>
+            <br/>
+            <a href="stats_metadata.png" target="_blank" class="button_slim">Service Metadata Counts</a>
+            <br/>
+            <br/>
+            <a href="api_usage_report.txt" target="_blank" class="button_slim">API Usage</a>
+            <br/>
+            <br/>
+            <a href="archived_services_report.txt" target="_blank" class="button_slim">Archived Services</a>
+            <br/>
+            <br/>
+            <a href="monitoring_report.html" target="_blank" class="button_slim">Monitoring Report</a>
+            <br/>
+            <br/>
+            <a href="stats_search.png" target="_blank" class="button_slim">Search Counts</a>
+            <br/>
+            <br/>
+            <a href="similar_searches_report.txt" target="_blank" class="button_slim">Similar Searches</a>
+            <br/>
+            <br/>
+            <a href="soap_input_names.pdf" target="_blank" class="button_slim">SOAP Input Names Ranked</a>
+            <br/>
+            <br/>
+            <a href="soap_output_names.pdf" target="_blank" class="button_slim">SOAP Output Names Ranked</a>
+            <br/>
+            <br/>
+            <a href="stats_tags.png" target="_blank" class="button_slim">Tag Counts</a>
+            <br/>
+            <br/>
+
+          </div>
+        </div>
+
+        <span class="clear">&nbsp;</span>
+      </div>
+
+      <div>
+        <div id="stats" class="box_grouped_info center">
+          <h2>Notable Stats</h2>
+
+          <div style="float: left; width: 49%;">
+            
+            <div class="box_stat">
+              <h3>API</h3>
+              <div>
+                <div class="num">
+                  927,806
+                </div>
+                <div class="label">
+                  total API requests
+                </div>
+              </div>
+            </div>
+
+            <div class="box_stat">
+              <h3>Services</h3>
+              <div>
+                <div class="num">
+                  7.4%
+                </div>
+                <div class="label">
+                  153 out of 2055 services are archived
+                </div>
+              </div>
+              <br/>
+              <div id="service_types_graph_div">
+              </div>
+              <div class="label">
+                SOAP vs REST
+              </div>
+            </div>
+            
+            <div class="box_stat">
+              <h3>SOAP operations</h3>
+              <div>
+                <div class="num">
+                  11.6%
+                </div>
+                <div class="label">
+                  1,645 out of 19,008 SOAP operations take "parameters" as the 
+                  input and "parameters" as the output
+                </div>
+              </div>
+            </div>
+            
+            <div class="box_stat">
+              <h3>SOAP inputs</h3>
+              <table class="biocat_table">
+                <tr>
+                  <th>Name</th>
+                  <th>Frequency</th>
+                  <th>%age</th>
+                </tr>
+                <tr>
+                  <td>jobid</td>
+                  <td>6,929</td>
+                  <td>31.5%</td>
+                </tr>
+                <tr>
+                  <td>in0</td>
+                  <td>2,681</td>
+                  <td>12.2%</td>
+                </tr>
+                <tr>
+                  <td>parameters</td>
+                  <td>1,664</td>
+                  <td>7.6%</td>
+                </tr>
+                <tr>
+                  <td>inputs</td>
+                  <td>1,220</td>
+                  <td>5.6%</td>
+                </tr>
+                <tr>
+                  <td>data</td>
+                  <td>883</td>
+                  <td>4.0%</td>
+                </tr>
+              </table>
+              <div class="label">
+                most popular names
+              </div>
+              <br/>
+              <div>
+                <div class="num">
+                  1,195
+                </div>
+                <div class="label">
+                  unique names
+                </div>
+              </div>
+            </div>
+            
+            <div class="box_stat">
+              <h3>SOAP outputs</h3>
+              <table class="biocat_table">
+                <tr>
+                  <th>Name</th>
+                  <th>Frequency</th>
+                  <th>%age</th>
+                </tr>
+                <tr>
+                  <td>parameters</td>
+                  <td>1,648</td>
+                  <td>9.8%</td>
+                </tr>
+                <tr>
+                  <td>body</td>
+                  <td>946</td>
+                  <td>5.6%</td>
+                </tr>
+                <tr>
+                  <td>return</td>
+                  <td>679</td>
+                  <td>4.0%</td>
+                </tr>
+                <tr>
+                  <td>jobStatus</td>
+                  <td>575</td>
+                  <td>3.4%</td>
+                </tr>
+                <tr>
+                  <td>getResultsReturn</td>
+                  <td>439</td>
+                  <td>2.6%</td>
+                </tr>
+              </table>
+              <div class="label">
+                most popular names
+              </div>
+              <br/>
+              <div>
+                <div class="num">
+                  1,440
+                </div>
+                <div class="label">
+                  unique names
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div style="float: right; width: 49%;">
+            
+            <div class="box_stat">
+              <h3>Searches</h3>
+              <div>
+                <div class="num">
+                  29,137
+                </div>
+                <div class="label">
+                  total searches carried out
+                </div>
+              </div>
+              <br/>
+              <div>
+                <div class="num">
+                  8,199
+                </div>
+                <div class="label">
+                  unique search terms
+                </div>
+              </div>
+              <br/>
+              <table class="biocat_table">
+                <tr>
+                  <th>Name</th>
+                  <th>Frequency</th>
+                  <th>%age</th>
+                </tr>
+                <tr>
+                  <td>blast</td>
+                  <td>2,551</td>
+                  <td>8.8%</td>
+                </tr>
+                <tr>
+                  <td>ebi</td>
+                  <td>541</td>
+                  <td>1.9%</td>
+                </tr>
+                <tr>
+                  <td>kegg</td>
+                  <td>267</td>
+                  <td>0.9%</td>
+                </tr>
+                <tr>
+                  <td>dbfetch</td>
+                  <td>238</td>
+                  <td>0.8%</td>
+                </tr>
+                <tr>
+                  <td>ddbj</td>
+                  <td>233</td>
+                  <td>0.8%</td>
+                </tr>
+              </table>
+              <div class="label">
+                most popular terms
+              </div>
+              <br/>
+              <table class="biocat_table">
+                <tr>
+                  <th>Terms</th>
+                  <th>Frequency</th>
+                </tr>
+                <tr>
+                  <td>"blast" and "clustal"</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>"fast" and "dbfetch"</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>"ebi" and "blast"</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>"ebi" and "clustal"</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>"blast" and "ddbj"</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>"wsdbfetch" and "dbfetch"</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>"ebi" and "ddbj"</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>"WSDbfetch" and "ddbj"</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>"WSDbfetch" and "blast"</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>"blast" and "kegg"</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>"wsdbfetch" and "fasta"</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>"WSDbfetch" and "ebi"</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>"blast" and "alignment"</td>
+                  <td>5</td>
+                </tr>
+              </table>
+              <div class="label">
+                most frequent similar searches
+              </div>
+            </div>
+            
+            <div class="box_stat">
+              <h3>Service monitoring status</h3>
+              <div>
+                <div class="num">
+                  30.3%
+                </div>
+                <div class="label">
+                  577 out of 1,902 non archived services failing a test
+                </div>
+              </div>
+              <div id="service_status_graph_div">
+              </div>
+            </div>
+
+            <div class="box_stat">
+              <h3>Monitoring test results</h3>
+              <div>
+                <div class="num">
+                  11.2%
+                </div>
+                <div class="label">
+                  266,366 out of 2,638,964 test results are failed
+                </div>
+              </div>
+              <div id="test_results_graph_div">
+              </div>
+            </div>
+            
+          </div>
+
+          <span class="clear">&nbsp;</span>
+
+        </div>
+      </div>
+
+      <div>
+        <div id="graphs" class="box_grouped_info">
+          <h2>Graphs</h2>
+
+          <div class="box_stat">
+            <h3>Users over time</h3>
+            <br/>
+            <div>
+              <div class="num">
+                534
+              </div>
+              <div class="label">
+                registered users
+              </div>
+            </div>
+            <div id="users_time_graph_div">
+            </div>
+          </div>
+          
+          <div class="box_stat">
+            <h3>Services over time</h3>
+            <br/>
+            <div>
+              <div class="num">
+                2,055
+              </div>
+              <div class="label">
+                services
+              </div>
+            </div>
+            <div id="services_time_graph_div">
+            </div>
+          </div>
+          
+          <div class="box_stat">
+            <h3>Annotations over time (by all sources)</h3>
+            <br/>
+            <div>
+              <div class="num">
+                22,473
+              </div>
+              <div class="label">
+                annotations
+              </div>
+            </div>
+            <br/>
+            <div class="box_info_standout" style="width: 600px; margin-right: auto; margin-left: auto;">
+              This does not include the data parsed from WSDL docs, only the extra annotations added on top.
+            </div>
+            <div id="annotations_all_time_graph_div">
+            </div>
+          </div>
+          
+          <div class="box_stat">
+            <h3>Annotations over time (by Users only)</h3>
+            <br/>
+            <div>
+              <div class="num">
+                10,681
+              </div>
+              <div class="label">
+                annotations (by Users)
+              </div>
+            </div>
+            <br/>
+            <div class="box_info_standout" style="width: 600px; margin-right: auto; margin-left: auto;">
+              This does not include the data parsed from WSDL docs, only the extra annotations added on top.
+            </div>
+            <div id="annotations_users_time_graph_div">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

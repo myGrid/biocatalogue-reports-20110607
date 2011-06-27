@@ -1,0 +1,33 @@
+API Usage Report
+================
+
+          Requests (All):	1,200,343
+          Requests (XML):	1,067,351
+         Requests (JSON):	    5,713
+         Requests (ATOM):	  127,279
+
+ Requests (from Taverna):	   38,712
+
+Top 20 XML and JSON accesses:
+
+                                  view	  317,584
+        test_results_controller create	  272,537
+                   view_services_index	  225,848
+                                search	  158,603
+          annotations_controller index	   18,894
+       soap_operations_controller show	   16,375
+soap_operations_controller annotations	   11,121
+       services_controller annotations	    7,347
+           services_controller filters	    6,985
+                lookup_controller show	    6,509
+           services_controller summary	    4,517
+   soap_services_controller operations	    3,279
+    service_providers_controller index	    2,990
+            categories_controller show	    2,811
+                 tags_controller index	    2,784
+          services_controller variants	    2,511
+        services_controller monitoring	    2,274
+       services_controller deployments	    1,830
+    soap_inputs_controller annotations	    1,539
+         soap_services_controller show	    1,251
+
