@@ -1,0 +1,7 @@
+
+Soaplab Report
+==============
+
+         Soaplab servers:	        5
+Web services that are Soaplab tools:	      655
+Total SOAP operations on Soaplab services	   11,229
