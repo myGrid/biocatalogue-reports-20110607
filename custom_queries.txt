@@ -300,6 +300,7 @@ See file "annotations_users_over_time.txt"
 ---
 
 9. Breakdown of test types
+--------------------------
 
 SQL:
 
@@ -319,6 +320,24 @@ Results:
 
 ---
 
+10. Counts of non archived services for service providers
+---------------------------------------------------------
+
+SQL:
+
+SELECT service_providers.name, COUNT(*) AS count
+FROM services
+INNER JOIN service_deployments ON services.id = service_deployments.service_id
+INNER JOIN service_providers ON service_deployments.service_provider_id = service_providers.id
+WHERE services.archived_at IS NULL
+GROUP BY service_providers.id
+ORDER BY count DESC
+
+Results:
+
+See file "service_provider_service_counts.txt"
+
+---
 
 
 

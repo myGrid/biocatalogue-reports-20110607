@@ -1,0 +1,149 @@
+Counts of non archived services for service providers:
+
++-------------------------------------------------------------------------------+-------+
+| name                                                                          | count |
++-------------------------------------------------------------------------------+-------+
+| European Bioinformatics Institute (EBI)                                       |   638 |
+| Instituto Nacional de Bioinformatica (INB)                                    |   466 |
+| National Cancer Research Institute of Genoa, Italy (NCRI)                     |    94 |
+| Alberta                                                                       |    81 |
+| University of Manchester                                                      |    58 |
+| University of Nottingham                                                      |    52 |
+| University of Wageningen                                                      |    35 |
+| Bio2RDF                                                                       |    35 |
+| DNA Data Bank of Japan (DDBJ)                                                 |    30 |
+| GenOuest                                                                      |    22 |
+| Center for Biological Sequence Analysis (CBS)                                 |    20 |
+| iCapture Lab                                                                  |    19 |
+| Bielefeld University                                                          |    15 |
+| Institut de Biologie et Chimie des Proteines (IBCP)                           |    13 |
+| Stockholm Bioinformatics Center, Stockholm University                         |    13 |
+| Calgary                                                                       |    13 |
+| National Center for Biotechnology Information (NCBI)                          |    12 |
+| Max Planck Institute for Plant Breeding Research                              |    10 |
+| European Molecular Biology Network (EMBnet)                                   |     9 |
+| PRABI - Rhone-Alpes Bioinformatics Center                                     |     9 |
+| The Arabidopsis thaliana Integrated Database (ATIDB)                          |     8 |
+| Protemics Standard Initiative Common Query InterfaCe (PSICQUIC)               |     8 |
+| Harvard Medical School                                                        |     8 |
+| National Institute of Agrobiological Sciences (NIAS)                          |     8 |
+| Manchester Interdisciplinary Biocentre (MIB)                                  |     7 |
+| Neuroscience Information Framework (NIF)                                      |     7 |
+| Bergen Center for Computational Science                                       |     7 |
+| EMBL Nucleotide Sequence Database (Hiedelberg)                                |     7 |
+| BioOntology                                                                   |     6 |
+| The Institute of Bioinformatics and Systems Biology (IBIS)                    |     5 |
+| The Arabidopsis Information Resource (TAIR)                                   |     5 |
+| FuncNet                                                                       |     5 |
+| Max Planck Institute of Molecular Plant Physiology                            |     5 |
+| National Research Council Italy (CNR)                                         |     5 |
+| Institut de Biologie Moleculaire et Cellulaire of Strasbourg                  |     5 |
+| Laboratoire Interaction Plantes Micro-organisms (LIPM)                        |     5 |
+| The Adaptive Information Disclosure (AID)                                     |     4 |
+| Sabio                                                                         |     4 |
+| Database Center for Life Science (DBCLS)                                      |     4 |
+| The Arabidopsis Small RNA Project (ASRP)                                      |     4 |
+| Renci (NC)                                                                    |     4 |
+| GeneSilico                                                                    |     4 |
+| Indiana                                                                       |     4 |
+| Centre for Molecular and Biomolecular Informatics (CMBI)                      |     4 |
+| ChemSpider                                                                    |     3 |
+| Protein Data Bank Japan (PDBj)                                                |     3 |
+| Regulatory Sequence Analysis Tools (RSAT)                                     |     3 |
+| CATH                                                                          |     3 |
+| Protein Data Bank, USA  (RCSB PDB)                                            |     3 |
+| SwissProt (SIB)                                                               |     3 |
+| Institute for Advanced Biosciences Keio University                            |     2 |
+| www-bioinf-manchester-ac-uk                                                   |     2 |
+| Semantic SBML                                                                 |     2 |
+| University of Alabama at Birmingham (UAB)                                     |     2 |
+| Medical College of Georgia                                                    |     2 |
+| SEED                                                                          |     2 |
+| Pathway Commons                                                               |     2 |
+| University of Pittsburgh                                                      |     2 |
+| Nuclear Protein Database (NPD)                                                |     2 |
+| mook-inf-ed-ac-uk                                                             |     2 |
+| webserviceX                                                                   |     2 |
+| CSC - IT Center for Science                                                   |     2 |
+| Max Planck Institute for Molecular Genetics                                   |     2 |
+| San Diego SuperComputer Center                                                |     2 |
+| PRODORIC                                                                      |     2 |
+| Database Center for Life Science (DCLS)                                       |     1 |
+| Dialogue for Reverse Engineering Assessments and Methods (DREAM)              |     1 |
+| flybase-org                                                                   |     1 |
+| e-Fungi                                                                       |     1 |
+| University of Boston (Center for Advanced Genomics Technology)                |     1 |
+| CASPUR                                                                        |     1 |
+| hmmer-janelia-org                                                             |     1 |
+| myExperiment                                                                  |     1 |
+| Sanger Institute                                                              |     1 |
+| Ruder Boskovic Institute (RBI)                                                |     1 |
+| gohelle-cirad-fr                                                              |     1 |
+| antismash-secondarymetabolites-org                                            |     1 |
+| The Protein Domain Database (ProDom)                                          |     1 |
+| Uniprot                                                                       |     1 |
+| bubbles-biosemantics-org                                                      |     1 |
+| cactus-nci-nih-gov                                                            |     1 |
+| Max Planck Institute Integrated Gene Analysis System (MIGenAS)                |     1 |
+| miRMaid                                                                       |     1 |
+| Mouse Resource Browser (MRB)                                                  |     1 |
+| wwwsup-scmbb-ulb-ac-be                                                        |     1 |
+| www-dkcoin-org                                                                |     1 |
+| Allen Institute for Brain Science                                             |     1 |
+| Helmholtz Open Bioinformatics Technology (HOBIT)                              |     1 |
+| Medical College of Wisconsin                                                  |     1 |
+| STRING                                                                        |     1 |
+| www-mutalyzer-nl                                                              |     1 |
+| irefindex-uio-no                                                              |     1 |
+| National Cancer Institute (NCI)                                               |     1 |
+| Thomsom Reuters                                                               |     1 |
+| Katholieke Universiteit Leuven                                                |     1 |
+| WikiPathways                                                                  |     1 |
+| diArk                                                                         |     1 |
+| quebec-omim-bio2rdf-org                                                       |     1 |
+| mor-nlm-nih-gov                                                               |     1 |
+| GenePattern                                                                   |     1 |
+| Inha University, South Korea                                                  |     1 |
+| University of Uppsala, Sweden                                                 |     1 |
+| quebec-go-bio2rdf-org                                                         |     1 |
+| Reactome                                                                      |     1 |
+| Centro Nacional de Biotecnologia (National Center for Biotechnology)          |     1 |
+| obo-bio2rdf-org                                                               |     1 |
+| http                                                                          |     1 |
+| Pathbase                                                                      |     1 |
+| Legoo                                                                         |     1 |
+| SBML.org                                                                      |     1 |
+| quebec-geneid-bio2rdf-org                                                     |     1 |
+| University of Mexico (Center for Genomic Sciences of the National Autonomous) |     1 |
+| ProTag                                                                        |     1 |
+| XSPAN - A Cross-Species Anatomy Project                                       |     1 |
+| GeNS                                                                          |     1 |
+| reactome-bio2rdf-org                                                          |     1 |
+| Institute of Bioinformatics, Tsinghua University                              |     1 |
+| The G6G Directory of Omics and Intelligent Software                           |     1 |
+| Institute of Bioinformatics and Systems Biology Helmholtz Zentrum M▒nchen     |     1 |
+| mgi-bio2rdf-org                                                               |     1 |
+| German Cancer Research Center                                                 |     1 |
+| eMAP                                                                          |     1 |
+| HGVbase                                                                       |     1 |
+| Dumontier Lab                                                                 |     1 |
+| GeneON                                                                        |     1 |
+| quebec-iproclass-bio2rdf-org                                                  |     1 |
+| Biotechnology Center of the TU Dresden                                        |     1 |
+| Standford University                                                          |     1 |
+| BioMart                                                                       |     1 |
+| BridgeDb                                                                      |     1 |
+| hhpid-bio2rdf-org                                                             |     1 |
+| KEGG                                                                          |     1 |
+| Peking University                                                             |     1 |
+| International Rice Information System (IRIS)                                  |     1 |
+| IceLogo                                                                       |     1 |
+| Netherlands Bioinformatics Consortium (NBIC)                                  |     1 |
+| www-kmplot-com                                                                |     1 |
+| Nactem                                                                        |     1 |
+| Glasgow Taxonomic Name Server                                                 |     1 |
+| World Wide Molecular Matrix (WWMM)                                            |     1 |
+| ontologicaldiscovery-org                                                      |     1 |
+| bioputer-mimuw-edu-pl                                                         |     1 |
++-------------------------------------------------------------------------------+-------+
+142 rows in set (0.00 sec)

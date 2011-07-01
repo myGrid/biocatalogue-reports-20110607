@@ -47,7 +47,7 @@
           <div id="counts" class="box_grouped_info">
             <h2>Overall Counts</h2>
             <p class="center">
-              <img src="stats_total_counts.png" alt="stats" />
+              <img src="stats_total_counts.png" alt="stats" style="width:280px;" />
             </p>
           </div>
         </div>
@@ -60,6 +60,9 @@
             <br/>
             <br/>
             <a href="stats_metadata.png" target="_blank" class="button_slim">Service Metadata Counts</a>
+            <br/>
+            <br/>
+            <a href="service_provider_service_counts.txt" target="_blank" class="button_slim">Service Providers</a>
             <br/>
             <br/>
             <a href="api_usage_report.txt" target="_blank" class="button_slim">API Usage</a>
@@ -114,7 +117,7 @@
                 </div>
               </div>
             </div>
-
+            
             <div class="box_stat">
               <h3>Services</h3>
               <div>
@@ -135,6 +138,54 @@
               </div>
               <div class="label">
                 SOAP vs REST
+              </div>
+            </div>
+            
+            <div class="box_stat">
+              <h3>Service providers</h3>
+              <div>
+                <div class="num">
+                  142
+                </div>
+                <div class="label">
+                  service providers with non archived services
+                </div>
+              </div>
+              <br/>
+              <table class="biocat_table">
+                <tr>
+                  <th>Provider</th>
+                  <th>Services</th>
+                  <th>%age</th>
+                </tr>
+                <tr>
+                  <td>EBI</td>
+                  <td>638</td>
+                  <td>33.5%</td>
+                </tr>
+                <tr>
+                  <td>INB</td>
+                  <td>466</td>
+                  <td>24.5%</td>
+                </tr>
+                <tr>
+                  <td>NCRI Genoa, Italy</td>
+                  <td>94</td>
+                  <td>4.9%</td>
+                </tr>
+                <tr>
+                  <td>Alberta</td>
+                  <td>81</td>
+                  <td>4.3%</td>
+                </tr>
+                <tr>
+                  <td>University of Manchester</td>
+                  <td>58</td>
+                  <td>3.0%</td>
+                </tr>
+              </table>
+              <div class="label">
+                most non archived services
               </div>
             </div>
             
@@ -663,7 +714,6 @@
 
           <div class="box_stat">
             <h3>Users over time</h3>
-            <br/>
             <div>
               <div class="num">
                 534
@@ -680,7 +730,6 @@
           
           <div class="box_stat">
             <h3>Services over time</h3>
-            <br/>
             <div>
               <div class="num">
                 2,055
@@ -696,8 +745,21 @@
           </div>
           
           <div class="box_stat">
+            <h3>Service providers</h3>
+            <div>
+              <div class="num">
+                142
+              </div>
+              <div class="label">
+                service providers with non archived services
+              </div>
+            </div>
+            <div id="service_providers_services_graph_div">
+            </div>
+          </div>
+          
+          <div class="box_stat">
             <h3>Annotations over time (by all sources)</h3>
-            <br/>
             <div>
               <div class="num">
                 22,473
@@ -718,7 +780,6 @@
           
           <div class="box_stat">
             <h3>Annotations over time (by Users only)</h3>
-            <br/>
             <div>
               <div class="num">
                 10,681

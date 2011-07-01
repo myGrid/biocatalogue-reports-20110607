@@ -23,6 +23,7 @@ function drawCharts() {
     pieSliceText: 'none'
   });
 
+
   // Service monitoring status
 
   var serviceStatusData = new google.visualization.DataTable();
@@ -288,6 +289,76 @@ function drawCharts() {
     },
     legend: 'none'
   });
+  
+  // Service providers
+  
+  var serviceProvidersServicesData = new google.visualization.DataTable();
+  serviceProvidersServicesData.addColumn('string', 'Provider');
+  serviceProvidersServicesData.addColumn('number', 'Services');
+  serviceProvidersServicesData.addRows([
+  [ 'European Bioinformatics Institute (EBI)', 638 ],
+  [ 'Instituto Nacional de Bioinformatica (INB)', 466 ],
+  [ 'National Cancer Research Institute of Genoa, Italy (NCRI)', 94 ],
+  [ 'Alberta', 81 ],
+  [ 'University of Manchester', 58 ],
+  [ 'University of Nottingham', 52 ],
+  [ 'University of Wageningen', 35 ],
+  [ 'Bio2RDF', 35 ],
+  [ 'DNA Data Bank of Japan (DDBJ)', 30 ],
+  [ 'GenOuest', 22 ],
+  [ 'Center for Biological Sequence Analysis (CBS)', 20 ],
+  [ 'iCapture Lab', 19 ],
+  [ 'Bielefeld University', 15 ],
+  [ 'Institut de Biologie et Chimie des Proteines (IBCP)', 13 ],
+  [ 'Stockholm Bioinformatics Center, Stockholm University', 13 ],
+  [ 'Calgary', 13 ],
+  [ 'National Center for Biotechnology Information (NCBI)', 12 ],
+  [ 'Max Planck Institute for Plant Breeding Research', 10 ],
+  [ 'European Molecular Biology Network (EMBnet)', 9 ],
+  [ 'PRABI - Rhone-Alpes Bioinformatics Center', 9 ],
+  [ 'The Arabidopsis thaliana Integrated Database (ATIDB)', 8 ],
+  [ 'Protemics Standard Initiative Common Query InterfaCe (PSICQUIC)', 8 ],
+  [ 'Harvard Medical School', 8 ],
+  [ 'National Institute of Agrobiological Sciences (NIAS)', 8 ],
+  [ 'Manchester Interdisciplinary Biocentre (MIB)', 7 ],
+  [ 'Neuroscience Information Framework (NIF)', 7 ],
+  [ 'Bergen Center for Computational Science', 7 ],
+  [ 'EMBL Nucleotide Sequence Database (Hiedelberg)', 7 ],
+  [ 'BioOntology', 6 ],
+  [ 'The Institute of Bioinformatics and Systems Biology (IBIS)', 5 ],
+  [ 'The Arabidopsis Information Resource (TAIR)', 5 ],
+  [ 'FuncNet', 5 ],
+  [ 'Max Planck Institute of Molecular Plant Physiology', 5 ],
+  [ 'National Research Council Italy (CNR)', 5 ],
+  [ 'Institut de Biologie Moleculaire et Cellulaire of Strasbourg', 5 ],
+  [ 'Laboratoire Interaction Plantes Micro-organisms (LIPM)', 5 ],
+  [ 'The Adaptive Information Disclosure (AID)', 4 ],
+  [ 'Sabio', 4 ],
+  [ 'Database Center for Life Science (DBCLS)', 4 ],
+  [ 'The Arabidopsis Small RNA Project (ASRP)', 4 ],
+  [ 'Renci (NC)', 4 ],
+  [ 'GeneSilico', 4 ],
+  [ 'Indiana', 4 ],
+  [ 'Centre for Molecular and Biomolecular Informatics (CMBI)', 4 ],
+  [ 'ChemSpider', 3 ],
+  [ 'Protein Data Bank Japan (PDBj)', 3 ],
+  [ 'Regulatory Sequence Analysis Tools (RSAT)', 3 ],
+  [ 'CATH', 3 ],
+  [ 'Protein Data Bank, USA  (RCSB PDB)', 3 ],
+  [ 'SwissProt (SIB)', 3 ]
+  ]);
+  var serviceProvidersServicesChart = new google.visualization.BarChart(document.getElementById('service_providers_services_graph_div'));
+  serviceProvidersServicesChart.draw(serviceProvidersServicesData, {
+    width: 750,
+    height: 1400,
+    chartArea: { height:"90%", width: "70%", top: 80 },
+    title: "Top 50 with most services",
+    hAxis: {
+      title: 'Services'
+    },
+    legend: 'none'
+  });
+  
 
   // Annotations over time (by all sources)
 
@@ -338,6 +409,7 @@ function drawCharts() {
     },
     legend: 'none'
   });
+  
 
   // Annotations over time (by all sources)
 
