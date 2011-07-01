@@ -96,100 +96,197 @@ function drawCharts() {
 
   var usersTimeData = new google.visualization.DataTable();
   usersTimeData.addColumn('string', 'Month');
-  usersTimeData.addColumn('number', 'Per Month');
   usersTimeData.addColumn('number', 'Cumulative');
   usersTimeData.addRows([
-  [ 'Nov 08', 11, 11 ],
-  [ 'Dec 08', 1, 12 ],
-  [ 'Jan 09', 3, 15 ],
-  [ 'Feb 09', 1, 16 ],
-  [ 'Mar 09', 4, 20 ],
-  [ 'Apr 09', 5, 25 ],
-  [ 'May 09', 7, 32 ],
-  [ 'Jun 09', 13, 45 ],
-  [ 'Jul 09', 48, 93 ],
-  [ 'Aug 09', 10, 103 ],
-  [ 'Sep 09', 13, 116 ],
-  [ 'Oct 09', 12, 128 ],
-  [ 'Nov 09', 23, 151 ],
-  [ 'Dec 09', 17, 168 ],
-  [ 'Jan 10', 16, 184 ],
-  [ 'Feb 10', 16, 200 ],
-  [ 'Mar 10', 128, 328 ],
-  [ 'Apr 10', 15, 343 ],
-  [ 'May 10', 15, 358 ],
-  [ 'Jun 10', 25, 383 ],
-  [ 'Jul 10', 18, 401 ],
-  [ 'Aug 10', 6, 407 ],
-  [ 'Sep 10', 11, 418 ],
-  [ 'Oct 10', 15, 433 ],
-  [ 'Nov 10', 13, 446 ],
-  [ 'Dec 10', 18, 464 ],
-  [ 'Jan 11', 8, 472 ],
-  [ 'Feb 11', 12, 484 ],
-  [ 'Mar 11', 17, 501 ],
-  [ 'Apr 11', 13, 514 ],
-  [ 'May 11', 15, 529 ],
-  [ 'Jun 11', 5, 534 ]
+  [ 'Nov 08', 11 ],
+  [ 'Dec 08', 12 ],
+  [ 'Jan 09', 15 ],
+  [ 'Feb 09', 16 ],
+  [ 'Mar 09', 20 ],
+  [ 'Apr 09', 25 ],
+  [ 'May 09', 32 ],
+  [ 'Jun 09', 45 ],
+  [ 'Jul 09', 93 ],
+  [ 'Aug 09', 103 ],
+  [ 'Sep 09', 116 ],
+  [ 'Oct 09', 128 ],
+  [ 'Nov 09', 151 ],
+  [ 'Dec 09', 168 ],
+  [ 'Jan 10', 184 ],
+  [ 'Feb 10', 200 ],
+  [ 'Mar 10', 328 ],
+  [ 'Apr 10', 343 ],
+  [ 'May 10', 358 ],
+  [ 'Jun 10', 383 ],
+  [ 'Jul 10', 401 ],
+  [ 'Aug 10', 407 ],
+  [ 'Sep 10', 418 ],
+  [ 'Oct 10', 433 ],
+  [ 'Nov 10', 446 ],
+  [ 'Dec 10', 464 ],
+  [ 'Jan 11', 472 ],
+  [ 'Feb 11', 484 ],
+  [ 'Mar 11', 501 ],
+  [ 'Apr 11', 514 ],
+  [ 'May 11', 529 ],
+  [ 'Jun 11', 534 ]
   ]);
   var usersTimeChart = new google.visualization.AreaChart(document.getElementById('users_time_graph_div'));
   usersTimeChart.draw(usersTimeData, {
     width: 700,
     height: 300,
-    title: null,
+    title: "Cumulative",
     hAxis: {
       title: 'Month'
-    }
+    },
+    legend: 'none'
   });
+  
+  var usersTimeData2 = new google.visualization.DataTable();
+  usersTimeData2.addColumn('string', 'Month');
+  usersTimeData2.addColumn('number', 'Per Month');
+  usersTimeData2.addRows([
+  [ 'Nov 08', 11 ],
+  [ 'Dec 08', 1 ],
+  [ 'Jan 09', 3 ],
+  [ 'Feb 09', 1 ],
+  [ 'Mar 09', 4 ],
+  [ 'Apr 09', 5 ],
+  [ 'May 09', 7 ],
+  [ 'Jun 09', 13 ],
+  [ 'Jul 09', 48 ],
+  [ 'Aug 09', 10 ],
+  [ 'Sep 09', 13 ],
+  [ 'Oct 09', 12 ],
+  [ 'Nov 09', 23 ],
+  [ 'Dec 09', 17 ],
+  [ 'Jan 10', 16 ],
+  [ 'Feb 10', 16 ],
+  [ 'Mar 10', 128 ],
+  [ 'Apr 10', 15 ],
+  [ 'May 10', 15 ],
+  [ 'Jun 10', 25 ],
+  [ 'Jul 10', 18 ],
+  [ 'Aug 10', 6 ],
+  [ 'Sep 10', 11 ],
+  [ 'Oct 10', 15 ],
+  [ 'Nov 10', 13 ],
+  [ 'Dec 10', 18 ],
+  [ 'Jan 11', 8 ],
+  [ 'Feb 11', 12 ],
+  [ 'Mar 11', 17 ],
+  [ 'Apr 11', 13 ],
+  [ 'May 11', 15 ],
+  [ 'Jun 11', 5 ]
+  ]);
+  var usersTimeChart2 = new google.visualization.LineChart(document.getElementById('users_time_graph_div_2'));
+  usersTimeChart2.draw(usersTimeData2, {
+    width: 750,
+    height: 400,
+    title: "Per Month",
+    hAxis: {
+      title: 'Month'
+    },
+    legend: 'none'
+  });
+
 
   // Services over time
 
   var servicesTimeData = new google.visualization.DataTable();
   servicesTimeData.addColumn('string', 'Month');
-  servicesTimeData.addColumn('number', 'Per Month');
   servicesTimeData.addColumn('number', 'Cumulative');
   servicesTimeData.addRows([
-  [ 'Nov 08', 58, 58 ],
-  [ 'Dec 08', 3, 61 ],
-  [ 'Jan 09', 5, 66 ],
-  [ 'Feb 09', 68, 134 ],
-  [ 'Mar 09', 279, 413 ],
-  [ 'Apr 09', 46, 459 ],
-  [ 'May 09', 500, 959 ],
-  [ 'Jun 09', 83, 1042 ],
-  [ 'Jul 09', 11, 1053 ],
-  [ 'Aug 09', 1, 1054 ],
-  [ 'Sep 09', 4, 1058 ],
-  [ 'Oct 09', 5, 1063 ],
-  [ 'Nov 09', 68, 1131 ],
-  [ 'Dec 09', 15, 1146 ],
-  [ 'Jan 10', 4, 1150 ],
-  [ 'Feb 10', 14, 1164 ],
-  [ 'Mar 10', 440, 1604 ],
-  [ 'Apr 10', 8, 1612 ],
-  [ 'May 10', 62, 1674 ],
-  [ 'Jun 10', 7, 1681 ],
-  [ 'Jul 10', 5, 1686 ],
-  [ 'Aug 10', 2, 1688 ],
-  [ 'Sep 10', 22, 1710 ],
-  [ 'Oct 10', 11, 1721 ],
-  [ 'Nov 10', 1, 1722 ],
-  [ 'Dec 10', 10, 1732 ],
-  [ 'Jan 11', 3, 1735 ],
-  [ 'Feb 11', 1, 1736 ],
-  [ 'Mar 11', 14, 1750 ],
-  [ 'Apr 11', 300, 2050 ],
-  [ 'May 11', 2, 2052 ],
-  [ 'Jun 11', 4, 2056 ]
+  [ 'Nov 08', 58 ],
+  [ 'Dec 08', 61 ],
+  [ 'Jan 09', 66 ],
+  [ 'Feb 09', 134 ],
+  [ 'Mar 09', 413 ],
+  [ 'Apr 09', 459 ],
+  [ 'May 09', 959 ],
+  [ 'Jun 09', 1042 ],
+  [ 'Jul 09', 1053 ],
+  [ 'Aug 09', 1054 ],
+  [ 'Sep 09', 1058 ],
+  [ 'Oct 09', 1063 ],
+  [ 'Nov 09', 1131 ],
+  [ 'Dec 09', 1146 ],
+  [ 'Jan 10', 1150 ],
+  [ 'Feb 10', 1164 ],
+  [ 'Mar 10', 1604 ],
+  [ 'Apr 10', 1612 ],
+  [ 'May 10', 1674 ],
+  [ 'Jun 10', 1681 ],
+  [ 'Jul 10', 1686 ],
+  [ 'Aug 10', 1688 ],
+  [ 'Sep 10', 1710 ],
+  [ 'Oct 10', 1721 ],
+  [ 'Nov 10', 1722 ],
+  [ 'Dec 10', 1732 ],
+  [ 'Jan 11', 1735 ],
+  [ 'Feb 11', 1736 ],
+  [ 'Mar 11', 1750 ],
+  [ 'Apr 11', 2050 ],
+  [ 'May 11', 2052 ],
+  [ 'Jun 11', 2056 ]
   ]);
   var servicesTimeChart = new google.visualization.AreaChart(document.getElementById('services_time_graph_div'));
   servicesTimeChart.draw(servicesTimeData, {
-    width: 700,
-    height: 300,
-    title: null,
+    width: 750,
+    height: 400,
+    title: "Cumulative",
     hAxis: {
       title: 'Month'
-    }
+    },
+    legend: 'none'
+  });
+  
+  var servicesTimeData2 = new google.visualization.DataTable();
+  servicesTimeData2.addColumn('string', 'Month');
+  servicesTimeData2.addColumn('number', 'Per Month');
+  servicesTimeData2.addRows([
+  [ 'Nov 08', 58 ],
+  [ 'Dec 08', 3 ],
+  [ 'Jan 09', 5 ],
+  [ 'Feb 09', 684 ],
+  [ 'Mar 09', 279 ],
+  [ 'Apr 09', 46 ],
+  [ 'May 09', 500 ],
+  [ 'Jun 09', 83 ],
+  [ 'Jul 09', 11 ],
+  [ 'Aug 09', 1 ],
+  [ 'Sep 09', 4 ],
+  [ 'Oct 09', 5 ],
+  [ 'Nov 09', 68 ],
+  [ 'Dec 09', 15 ],
+  [ 'Jan 10', 4 ],
+  [ 'Feb 10', 14 ],
+  [ 'Mar 10', 440 ],
+  [ 'Apr 10', 8 ],
+  [ 'May 10', 62 ],
+  [ 'Jun 10', 7 ],
+  [ 'Jul 10', 5 ],
+  [ 'Aug 10', 2 ],
+  [ 'Sep 10', 22 ],
+  [ 'Oct 10', 11 ],
+  [ 'Nov 10', 1 ],
+  [ 'Dec 10', 10 ],
+  [ 'Jan 11', 3 ],
+  [ 'Feb 11', 1 ],
+  [ 'Mar 11', 14 ],
+  [ 'Apr 11', 300 ],
+  [ 'May 11', 2 ],
+  [ 'Jun 11', 4 ]
+  ]);
+  var servicesTimeChart2 = new google.visualization.LineChart(document.getElementById('services_time_graph_div_2'));
+  servicesTimeChart2.draw(servicesTimeData2, {
+    width: 750,
+    height: 400,
+    title: "Per Month",
+    hAxis: {
+      title: 'Month'
+    },
+    legend: 'none'
   });
 
   // Annotations over time (by all sources)
@@ -233,12 +330,13 @@ function drawCharts() {
   ]);
   var annotationsAllTimeChart = new google.visualization.AreaChart(document.getElementById('annotations_all_time_graph_div'));
   annotationsAllTimeChart.draw(annotationsAllTimeData, {
-    width: 700,
-    height: 300,
-    title: null,
+    width: 750,
+    height: 400,
+    title: "Cumulative & Per Month",
     hAxis: {
       title: 'Month'
-    }
+    },
+    legend: 'none'
   });
 
   // Annotations over time (by all sources)
@@ -282,12 +380,13 @@ function drawCharts() {
   ]);
   var annotationsUsersTimeChart = new google.visualization.AreaChart(document.getElementById('annotations_users_time_graph_div'));
   annotationsUsersTimeChart.draw(annotationsUsersTimeData, {
-    width: 700,
-    height: 300,
-    title: null,
+    width: 750,
+    height: 400,
+    title: "Cumulative & Per Month",
     hAxis: {
       title: 'Month'
-    }
+    },
+    legend: 'none'
   });
 
 }
