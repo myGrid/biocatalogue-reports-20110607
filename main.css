@@ -42,6 +42,9 @@ h3 {
 .biocat_table {
   margin: 0 auto 0.7em auto;
 }
+.biocat_table th {
+  text-align: center;
+}
 .biocat_table td {
   background-color: #FFF;
   text-align: center;

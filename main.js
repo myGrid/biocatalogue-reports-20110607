@@ -15,7 +15,6 @@ function drawCharts() {
     [ 'SOAP', 1971 ],
     [ 'REST', 84 ]
   ]);
-  
   var serviceTypesChart = new google.visualization.PieChart(document.getElementById('service_types_graph_div'));
   serviceTypesChart.draw(serviceTypesData, {
     width: 300,
@@ -33,7 +32,6 @@ function drawCharts() {
     [ 'Passing', 1325 ],
     [ 'Failing', 577 ]
   ]);
-  
   var serviceStatusChart = new google.visualization.PieChart(document.getElementById('service_status_graph_div'));
   serviceStatusChart.draw(serviceStatusData, {
     width: 300,
@@ -45,16 +43,45 @@ function drawCharts() {
   
   // Monitoring test results
 
-  var testResultsData = new google.visualization.DataTable();
-  testResultsData.addColumn('string', 'Status');
-  testResultsData.addColumn('number', 'Count');
-  testResultsData.addRows([
+  var allTestResultsData = new google.visualization.DataTable();
+  allTestResultsData.addColumn('string', 'Status');
+  allTestResultsData.addColumn('number', 'Count');
+  allTestResultsData.addRows([
     [ 'Passed', 2372598 ],
     [ 'Failed', 266366 ]
   ]);
+  var allTestResultsChart = new google.visualization.PieChart(document.getElementById('all_test_results_graph_div'));
+  allTestResultsChart.draw(allTestResultsData, {
+    width: 300,
+    height: 200,
+    title: null,
+    pieSliceText: 'none'
+  });
   
-  var testResultsChart = new google.visualization.PieChart(document.getElementById('test_results_graph_div'));
-  testResultsChart.draw(testResultsData, {
+  var availTestResultsData = new google.visualization.DataTable();
+  availTestResultsData.addColumn('string', 'Status');
+  availTestResultsData.addColumn('number', 'Count');
+  availTestResultsData.addRows([
+    [ 'Passed', 2246238 ],
+    [ 'Failed', 120965 ]
+  ]);
+  var availTestResultsChart = new google.visualization.PieChart(document.getElementById('avail_test_results_graph_div'));
+  availTestResultsChart.draw(availTestResultsData, {
+    width: 300,
+    height: 200,
+    title: null,
+    pieSliceText: 'none'
+  });
+  
+  var scriptTestResultsData = new google.visualization.DataTable();
+  scriptTestResultsData.addColumn('string', 'Status');
+  scriptTestResultsData.addColumn('number', 'Count');
+  scriptTestResultsData.addRows([
+    [ 'Passed', 126360 ],
+    [ 'Failed', 145401 ]
+  ]);
+  var scriptTestResultsChart = new google.visualization.PieChart(document.getElementById('script_test_results_graph_div'));
+  scriptTestResultsChart.draw(scriptTestResultsData, {
     width: 300,
     height: 200,
     title: null,
@@ -102,7 +129,6 @@ function drawCharts() {
   [ 'May 11', 15, 529 ],
   [ 'Jun 11', 5, 534 ]
   ]);
-
   var usersTimeChart = new google.visualization.AreaChart(document.getElementById('users_time_graph_div'));
   usersTimeChart.draw(usersTimeData, {
     width: 700,
@@ -153,7 +179,6 @@ function drawCharts() {
   [ 'May 11', 2, 2052 ],
   [ 'Jun 11', 4, 2056 ]
   ]);
-
   var servicesTimeChart = new google.visualization.AreaChart(document.getElementById('services_time_graph_div'));
   servicesTimeChart.draw(servicesTimeData, {
     width: 700,
@@ -203,7 +228,6 @@ function drawCharts() {
   [ 'May 11', 30, 22447 ],
   [ 'Jun 11', 30, 22477 ]
   ]);
-
   var annotationsAllTimeChart = new google.visualization.AreaChart(document.getElementById('annotations_all_time_graph_div'));
   annotationsAllTimeChart.draw(annotationsAllTimeData, {
     width: 700,
@@ -253,7 +277,6 @@ function drawCharts() {
   [ 'May 11', 30, 10651 ],
   [ 'Jun 11', 30, 10681 ]
   ]);
-
   var annotationsUsersTimeChart = new google.visualization.AreaChart(document.getElementById('annotations_users_time_graph_div'));
   annotationsUsersTimeChart.draw(annotationsUsersTimeData, {
     width: 700,

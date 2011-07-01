@@ -20,8 +20,13 @@ GROUP BY result
 
 Results:
 
-"Failed";"266,366"
-"Passed";"2,372,598"
++--------+---------+
+| result | number  |
++--------+---------+
+| Failed |  266366 |
+| Passed | 2372598 |
++--------+---------+
+2 rows in set (8.21 sec)
 
 = 10.1% tests failed
 
@@ -45,10 +50,45 @@ GROUP BY result
 
 Results:
 
-"Failed";"145401"
-"Passed";"126360"
++--------+--------+
+| result | number |
++--------+--------+
+| Failed | 145401 |
+| Passed | 126360 |
++--------+--------+
+2 rows in set (11.53 sec)
 
 = 53.5% tests failed
+
+---
+
+1c. Total number of passed and failed tests (for URL Monitors ONLY)
+-------------------------------------------------------------------
+
+SQL:
+
+SELECT result, count(*) as number
+FROM
+(select case when result >= 1 then "Failed"
+             else "Passed"
+         end as result
+FROM test_results
+INNER JOIN service_tests ON service_tests.id = test_results.service_test_id
+WHERE service_tests.test_type = "UrlMonitor"
+) AS  status
+GROUP BY result
+
+Results:
+
++--------+---------+
+| result | number  |
++--------+---------+
+| Failed |  120965 |
+| Passed | 2246238 |
++--------+---------+
+2 rows in set (2 min 13.92 sec)
+
+= 5.1% tests failed
 
 ---
 
@@ -258,3 +298,27 @@ Results:
 See file "annotations_users_over_time.txt"
 
 ---
+
+9. Breakdown of test types
+
+SQL:
+
+SELECT test_type, COUNT(*) AS count 
+FROM service_tests 
+GROUP BY test_type
+
+Results:
+
++------------+-------+
+| test_type  | count |
++------------+-------+
+| TestScript |   734 |
+| UrlMonitor |  4067 |
++------------+-------+
+2 rows in set (0.05 sec)
+
+---
+
+
+
+

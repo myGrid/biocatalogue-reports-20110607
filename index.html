@@ -528,30 +528,92 @@
             </div>
             
             <div class="box_stat">
-              <h3>Service monitoring status</h3>
+              <h3>Last service monitoring statuses</h3>
               <div>
                 <div class="num">
                   30.3%
                 </div>
                 <div class="label">
-                  577 out of 1,902 non archived services failing a test
+                  577 out of 1,902 non archived services failing all tests
                 </div>
               </div>
               <div id="service_status_graph_div">
               </div>
             </div>
-
+            
             <div class="box_stat">
-              <h3>Monitoring test results</h3>
+              <h3>Monitoring test types</h3>
+              
+              <table class="biocat_table">
+                <tr>
+                  <th>Type</th>
+                  <th>Count</th>
+                  <th>%age</th>
+                </tr>
+                <tr>
+                  <td>Availability checks</td>
+                  <td>4,067</td>
+                  <td>84.7%</td>
+                </tr>
+                <tr>
+                  <td>Test scripts</td>
+                  <td>734</td>
+                  <td>15.3%</td>
+                </tr>
+              </table>
               <div>
                 <div class="num">
-                  10.1%
+                  4,801
                 </div>
                 <div class="label">
-                  266,366 out of 2,638,964 test results are failed
+                  total service tests
                 </div>
               </div>
-              <div id="test_results_graph_div">
+            </div>
+
+            <div class="box_stat">
+              <h3>Monitoring test results since beginning</h3>
+              
+              <div class="box_stat inner">
+                <h4>ALL types of tests</h4>
+                <div>
+                  <div class="num">
+                    10.1%
+                  </div>
+                  <div class="label">
+                    266,366 out of 2,638,964 test results are failed
+                  </div>
+                </div>
+                <div id="all_test_results_graph_div">
+                </div>
+              </div>
+              
+              <div class="box_stat inner">
+                <h4>Availability checks only</h4>
+                <div>
+                  <div class="num">
+                    5.1%
+                  </div>
+                  <div class="label">
+                    120,965 out of 2,367,203 test results are failed
+                  </div>
+                </div>
+                <div id="avail_test_results_graph_div">
+                </div>
+              </div>
+              
+              <div class="box_stat inner">
+                <h4>Test scripts only</h4>
+                <div>
+                  <div class="num">
+                    53.5%
+                  </div>
+                  <div class="label">
+                    145,401 out of 271,761 test results are failed
+                  </div>
+                </div>
+                <div id="script_test_results_graph_div">
+                </div>
               </div>
             </div>
             
