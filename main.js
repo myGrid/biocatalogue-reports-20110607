@@ -5,7 +5,7 @@ google.load('visualization', '1', {
 google.setOnLoadCallback(drawCharts);
 
 function drawCharts() {
-
+  
   // Service types
 
   var serviceTypesData = new google.visualization.DataTable();
@@ -55,7 +55,8 @@ function drawCharts() {
     width: 300,
     height: 200,
     title: null,
-    pieSliceText: 'none'
+    pieSliceText: 'none',
+    backgroundColor: '#F7F7F7'
   });
   
   var availTestResultsData = new google.visualization.DataTable();
@@ -70,7 +71,8 @@ function drawCharts() {
     width: 300,
     height: 200,
     title: null,
-    pieSliceText: 'none'
+    pieSliceText: 'none',
+    backgroundColor: '#F7F7F7'
   });
   
   var scriptTestResultsData = new google.visualization.DataTable();
@@ -85,7 +87,8 @@ function drawCharts() {
     width: 300,
     height: 200,
     title: null,
-    pieSliceText: 'none'
+    pieSliceText: 'none',
+    backgroundColor: '#F7F7F7'
   });
 
 

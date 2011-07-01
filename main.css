@@ -4,6 +4,9 @@
   background-color: #FFF; 
   border: 1px solid #DDD; 
   padding: 1em 1.5em;
+  box-shadow: 0 0 8px #DDD;
+  -webkit-box-shadow: 0 0 8px #DDD;
+  -moz-box-shadow: 0 0 8px #DDD;
 }
 
 h2, h3 {
@@ -18,6 +21,11 @@ h3 {
   font-size: 116%;
   margin-bottom: 1em;
 }
+
+hr {
+  color: #DDD;
+  margin: 0 1em;
+}
 .operations_quick_browse_box {
   border-radius: 4px;
   -moz-border-radius: 4px;
@@ -31,8 +39,7 @@ h3 {
   line-height: 1.5;
 }
 .box_grouped_info {
-  /*background-color: #F4F1F9;*/
-  background-color: #DCCFF1;
+  background-color: #E8DEFA;
   margin-bottom: 2em;
   border-radius: 4px;
   -moz-border-radius: 4px;
@@ -51,13 +58,13 @@ h3 {
 }
 .box_stat {
   text-align: center;
-  border: 1px solid #DDD;
+  border: 1px solid #CCC;
   background-color: #FFF;
   padding: 0.7em 0.4em 0.7em 0.4em;
   margin-bottom: 1em;
   border-radius: 4px;
   -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
+  -webkit-border-radius: 4px;  
 }
 .box_stat .num {
   font-size: 197%;
@@ -67,11 +74,16 @@ h3 {
   color: #990000;
 }
 .box_stat .label {
-  color: #666;
+  color: #555;
   text-align: center;
   font-weight: bold;
+  margin-top: 0.2em;
 }
-
+.box_stat .label .comp {
+  font-weight: normal;
+  color: #777;
+}
 .box_stat .inner {
-  background-color: #F7F7F7;  
+  background-color: #F7F7F7;
+  border-color: #DDD;
 }
