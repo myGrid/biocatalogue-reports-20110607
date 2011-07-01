@@ -38,7 +38,40 @@ function drawCharts() {
     width: 300,
     height: 200,
     title: null,
-    pieSliceText: 'none'
+    pieSliceText: 'none',
+    backgroundColor: '#F7F7F7'
+  });
+  
+  var serviceStatusData2 = new google.visualization.DataTable();
+  serviceStatusData2.addColumn('string', 'Status');
+  serviceStatusData2.addColumn('number', 'Count');
+  serviceStatusData2.addRows([
+    [ 'Passing', 1762 ],
+    [ 'Failing', 140 ]
+  ]);
+  var serviceStatusChart2 = new google.visualization.PieChart(document.getElementById('service_status_graph_div_2'));
+  serviceStatusChart2.draw(serviceStatusData2, {
+    width: 300,
+    height: 200,
+    title: null,
+    pieSliceText: 'none',
+    backgroundColor: '#F7F7F7'
+  });
+  
+  var serviceStatusData3 = new google.visualization.DataTable();
+  serviceStatusData3.addColumn('string', 'Status');
+  serviceStatusData3.addColumn('number', 'Count');
+  serviceStatusData3.addRows([
+    [ 'Passing', 243 ],
+    [ 'Failing', 461 ]
+  ]);
+  var serviceStatusChart3 = new google.visualization.PieChart(document.getElementById('service_status_graph_div_3'));
+  serviceStatusChart3.draw(serviceStatusData3, {
+    width: 300,
+    height: 200,
+    title: null,
+    pieSliceText: 'none',
+    backgroundColor: '#F7F7F7'
   });
   
   

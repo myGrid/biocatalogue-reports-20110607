@@ -639,19 +639,64 @@
             
             <div class="box_stat">
               <h3>Last service monitoring statuses</h3>
-              <div>
-                <div class="num">
-                  30.3%
+              
+              <div class="box_stat inner">
+                <h4>ALL types of tests</h4>
+                <div>
+                  <div class="num">
+                    30.3%
+                  </div>
+                  <div class="label">
+                     of all non archived services failing a test
+                    <br/>
+                    <span class="comp">
+                      (577 out of 1,902)
+                    </span>
+                  </div>
                 </div>
-                <div class="label">
-                   of non archived services failing a test
-                  <br/>
-                  <span class="comp">
-                    (577 out of 1,902)
-                  </span>
+                <div id="service_status_graph_div">
                 </div>
               </div>
-              <div id="service_status_graph_div">
+              
+              <div class="box_stat inner">
+                <h4>Availability checks only</h4>
+                <div>
+                  <div class="num">
+                    7.4%
+                  </div>
+                  <div class="label">
+                     of all non archived services failing an availability test
+                    <br/>
+                    <span class="comp">
+                      (140 out of 1902)
+                    </span>
+                  </div>
+                </div>
+                <div id="service_status_graph_div_2">
+                </div>
+              </div>
+              
+              <div class="box_stat inner">
+                <h4>Test scripts only</h4>
+                <div>
+                  <div class="num">
+                    24.2%
+                  </div>
+                  <div class="label">
+                     of all non archived services failing a test script test
+                    <br/>
+                    <span class="comp">
+                      (461 out of 1902)
+                    </span>
+                  </div>
+                </div>
+                <br/>
+                <hr/>
+                <div id="service_status_graph_div_3">
+                </div>
+                <div class="label">
+                  status of services with test scripts
+                </div>
               </div>
             </div>
             
