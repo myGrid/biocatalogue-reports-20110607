@@ -339,5 +339,24 @@ See file "service_provider_service_counts.txt"
 
 ---
 
+11. Categories on services
+--------------------------
+
+SQL:
+
+SELECT services.id, services.name, COUNT(*) AS category_annotations
+FROM services
+INNER JOIN annotations ON annotatable_type = "Service" AND annotatable_id = services.id
+INNER JOIN annotation_attributes ON annotations.attribute_id = annotation_attributes.id
+WHERE annotation_attributes.name = "category"
+GROUP BY services.id
+ORDER BY category_annotations DESC
+
+Results:
+
+See file "service categories_data.txt"
+
+---
+
 
 

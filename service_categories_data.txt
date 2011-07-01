@@ -1,0 +1,490 @@
+Top level categories and counts of services that have that 
+category or any sub-category below it:
+
+{
+        "Biostatistics" => 15,
+             "Genomics" => 20,
+            "Phylogeny" => 5,
+      "Systems Biology" => 26,
+             "Ontology" => 25,
+          "Text Mining" => 22,
+    "Sequence Analysis" => 198,
+       "Data Retrieval" => 157,
+     "Chemoinformatics" => 15,
+           "Proteomics" => 37,
+          "Microarrays" => 43
+}
+
+
+Total: 563
+
+---
+
+Categories on services:
+
++------+-----------------------------------------------------------------------------------------+----------------------+
+| id   | name                                                                                    | category_annotations |
++------+-----------------------------------------------------------------------------------------+----------------------+
+| 1928 | EBISearchService                                                                        |                   19 |
+|   11 | KEGG                                                                                    |                    9 |
+| 2145 | The G6G Directory of Omics and Intelligent Software                                     |                    8 |
+| 2771 | Kaplan Meier Plotter                                                                    |                    7 |
+|  154 | ELMdb                                                                                   |                    7 |
+| 1924 | pfam                                                                                    |                    5 |
+|   29 | eUtilsService                                                                           |                    5 |
+| 2070 | GenesilicoProteinSilicoSOAPService                                                      |                    5 |
+| 2784 | antiSMASH: antibiotics & Secondary Metabolite Analysis SHell                            |                    5 |
+| 1507 | Integr8ImplService                                                                      |                    4 |
+|  614 | MiriamProviderService                                                                   |                    4 |
+| 1925 | wsdbfetch                                                                               |                    4 |
+| 1417 | WSDBFetchServerLegacyService                                                            |                    4 |
+|    4 | WSDBFetchServerLegacyService                                                            |                    4 |
+|    5 | WSInterProScanService                                                                   |                    4 |
+| 2654 | WSDBFetchDoclitServerService                                                            |                    4 |
+|   43 | MiriamProviderService                                                                   |                    4 |
+| 2720 | Get Concept Details                                                                     |                    4 |
+| 2190 | dbfetch                                                                                 |                    4 |
+| 2015 | mrsws_search                                                                            |                    4 |
+| 1446 | roseImplementationService                                                               |                    4 |
+| 1927 | WSWUBlastService                                                                        |                    4 |
+| 2069 | GenesilicoMetaServerSOAPService                                                         |                    4 |
+| 1933 | MirMaid                                                                                 |                    4 |
+| 1898 | phosphoELMdb                                                                            |                    4 |
+| 2701 | WSDBFetchServerService                                                                  |                    3 |
+| 1639 | sabiork                                                                                 |                    3 |
+| 2073 | logol                                                                                   |                    3 |
+| 2050 | Search.HSLS.MolBio                                                                      |                    3 |
+| 1638 | sabiork                                                                                 |                    3 |
+|  613 | BioModelsWebServicesService                                                             |                    3 |
+| 2715 | Auto-Complete Neuroscience Terms                                                        |                    3 |
+|  116 | SOAPService                                                                             |                    3 |
+|  615 | SBOProviderService                                                                      |                    3 |
+| 2716 | G-language REST service                                                                 |                    3 |
+| 2029 | DataServices                                                                            |                    3 |
+|  415 | sabiork                                                                                 |                    3 |
+| 2087 | ChEMBL PSICQUIC Service                                                                 |                    3 |
+| 2636 | DDBJ_GIB                                                                                |                    3 |
+| 1418 | SBOProviderService                                                                      |                    3 |
+|  224 | helixturnhelixService                                                                   |                    3 |
+| 2721 | Display information about a particular ontology                                         |                    3 |
+| 2615 | Search MIRIAM annotations                                                               |                    3 |
+| 2708 | BridgeRest                                                                              |                    3 |
+| 2722 | Download an ontology file: Download the file (.owl) corresponding to the given ontology |                    3 |
+| 2616 | Find Similar BioModels                                                                  |                    3 |
+| 2709 | citedin                                                                                 |                    3 |
+|  143 | GeneSearchService                                                                       |                    3 |
+| 1633 | sabiork                                                                                 |                    3 |
+|   12 | ARSA                                                                                    |                    3 |
+| 2728 | hmmbuild                                                                                |                    3 |
+|   16 | Gib                                                                                     |                    3 |
+|   10 | GetEntry                                                                                |                    3 |
+| 2625 | DDBJ                                                                                    |                    3 |
+| 2713 | List Ontologies                                                                         |                    3 |
+| 2079 | PsicquicService                                                                         |                    3 |
+| 2619 | SeedWebServicesHandlerService                                                           |                    3 |
+| 2629 | DDBJ_GetEntry                                                                           |                    3 |
+| 2048 | WSBlastpgpService                                                                       |                    3 |
+| 2174 | ChebiWebServiceService                                                                  |                    2 |
+| 2183 | JDispatcherService                                                                      |                    2 |
+|  567 | AnovaService                                                                            |                    2 |
+| 1729 | getNASCArraysExpDescriptionByNASCArraysSlideService                                     |                    2 |
+| 1424 | MulttestService                                                                         |                    2 |
+| 2082 | PsicquicService                                                                         |                    2 |
+|  151 | Blast_Service                                                                           |                    2 |
+| 2800 | NIF Data Federation Summary                                                             |                    2 |
+|   41 | eFetchSequenceService                                                                   |                    2 |
+|  131 | WSTCoffeeService                                                                        |                    2 |
+| 2184 | JDispatcherService                                                                      |                    2 |
+| 1718 | getNASCArraysExpDescriptionByReferenceNumberService                                     |                    2 |
+|  132 | WSFastaService                                                                          |                    2 |
+|  584 | MummerService                                                                           |                    2 |
+| 2703 | InterProScan                                                                            |                    2 |
+|   49 | BLAST                                                                                   |                    2 |
+| 2732 | hmmscan                                                                                 |                    2 |
+| 2083 | PsicquicService                                                                         |                    2 |
+| 2772 | Tav4SBService                                                                           |                    2 |
+| 2811 | AnalysisServiceService                                                                  |                    2 |
+| 3098 | NCBO ressource index                                                                    |                    2 |
+| 2170 | IceLogoService                                                                          |                    2 |
+| 2185 | JDispatcherService                                                                      |                    2 |
+|  583 | MulttestService                                                                         |                    2 |
+| 1728 | getNASCArraysReferenceNumberByNASCstockCodeService                                      |                    2 |
+|   66 | WSDBFetchServerLegacyService                                                            |                    2 |
+| 2704 | DDBJ_GTPS                                                                               |                    2 |
+| 1327 | WSEmbossService                                                                         |                    2 |
+| 1428 | BlastlocalgtService                                                                     |                    2 |
+| 2084 | PsicquicService                                                                         |                    2 |
+|   14 | Fasta                                                                                   |                    2 |
+| 2018 | mrsws_clustal                                                                           |                    2 |
+| 2186 | JDispatcherService                                                                      |                    2 |
+| 1724 | getNASCArraysReferenceNumberByExperimentNameService                                     |                    2 |
+|  581 | KmeanService                                                                            |                    2 |
+|  596 | RsomService                                                                             |                    2 |
+| 1506 | WSNetPhos_3_1b                                                                          |                    2 |
+|  582 | MsaService                                                                              |                    2 |
+| 1767 | PDBSnpsService                                                                          |                    2 |
+| 1429 | BlastService                                                                            |                    2 |
+| 2733 | hmmsearch                                                                               |                    2 |
+| 2085 | IntAct PSICQUIC Service                                                                 |                    2 |
+|   34 | WebServiceInterfaceService                                                              |                    2 |
+| 2775 | JDispatcherService                                                                      |                    2 |
+|   19 | GIBV                                                                                    |                    2 |
+| 1730 | getNASCArraysExpDescriptionByMGEDExperimentDesignTypeService                            |                    2 |
+| 2457 | runPrattService                                                                         |                    2 |
+| 1412 | WSClustalWService                                                                       |                    2 |
+|   63 | WSClustalW2Service                                                                      |                    2 |
+| 2717 | DDBJ_GO                                                                                 |                    2 |
+| 1438 | BlastlocalService                                                                       |                    2 |
+| 2734 | hmmsim                                                                                  |                    2 |
+| 2086 | BioGrid PSICQUIC Service                                                                |                    2 |
+|  324 | infoalignService                                                                        |                    2 |
+| 2776 | JDispatcherService                                                                      |                    2 |
+|  592 | RknnService                                                                             |                    2 |
+| 2634 | DDBJ_BLAST                                                                              |                    2 |
+|  320 | sigscanService                                                                          |                    2 |
+|    7 | ClustalW                                                                                |                    2 |
+|  418 | YeastAffymapperService                                                                  |                    2 |
+|   44 | WSNCBIBlastService                                                                      |                    2 |
+| 2719 | engineDBService_12_09                                                                   |                    2 |
+|  123 | TimelogicblastService                                                                   |                    2 |
+|   68 | consService                                                                             |                    2 |
+| 2777 | JDispatcherService                                                                      |                    2 |
+| 3103 | SedMLServiceService                                                                     |                    2 |
+| 2010 | CathedralScan                                                                           |                    2 |
+| 1918 | SuService                                                                               |                    2 |
+| 2189 | SRS                                                                                     |                    2 |
+| 1720 | getNASCArraysExpDescriptionByNameService                                                |                    2 |
+| 1554 | getReportersOfTranscriptService                                                         |                    2 |
+|   17 | Gtop                                                                                    |                    2 |
+|  413 | blastprodomService                                                                      |                    2 |
+| 2736 | jackhmmer                                                                               |                    2 |
+| 2778 | JDispatcherService                                                                      |                    2 |
+| 3104 | SBSI parameter optimization web service                                                 |                    2 |
+| 1721 | getNASCArraysSlideByReferenceNumberService                                              |                    2 |
+| 2471 | runClustalwFastService                                                                  |                    2 |
+| 1691 | NASCArraysGeneswingerByAGIService                                                       |                    2 |
+| 2637 | DDBJ_GTOP                                                                               |                    2 |
+| 2655 | Drug susceptibility prediction for HIV Protease strains                                 |                    2 |
+|  130 | WSMuscleService                                                                         |                    2 |
+| 2045 | CPDB                                                                                    |                    2 |
+|    3 | WSCensorService                                                                         |                    2 |
+| 2737 | phmmer                                                                                  |                    2 |
+| 2089 | MatrixDB PSICQUIC Service                                                               |                    2 |
+| 2779 | JDispatcherService                                                                      |                    2 |
+| 1434 | BlastService                                                                            |                    2 |
+| 2009 | HMMScan                                                                                 |                    2 |
+| 1722 | getNASCArraysSlideByExperimentNameService                                               |                    2 |
+|  571 | DianaService                                                                            |                    2 |
+|  564 | BlastDemo                                                                               |                    2 |
+| 2699 | PDB_describePDB                                                                         |                    2 |
+| 2090 | MINT PSICQUIC Service                                                                   |                    2 |
+| 2749 | Mutalyzer                                                                               |                    2 |
+| 2008 | PRINTSService                                                                           |                    2 |
+| 1915 | EstgenomeService                                                                        |                    2 |
+| 1723 | getNASCArraysSlideByNASCstockCodeService                                                |                    2 |
+| 2473 | runClustalwFullService                                                                  |                    2 |
+| 1900 | DCAImplementationService                                                                |                    2 |
+|   42 | WSCitationImplService                                                                   |                    2 |
+|  603 | TimelogicblastService                                                                   |                    2 |
+| 1443 | TimelogicblastgtService                                                                 |                    2 |
+| 1725 | getNASCArraysReferenceNumberBySlideNameService                                          |                    2 |
+| 2539 | runMuscleFromSequencesService                                                           |                    2 |
+|    8 | Blast                                                                                   |                    2 |
+| 2710 | The Ontological Discovery Environment                                                   |                    2 |
+| 2068 | GenesilicoMetaRNASOAPService                                                            |                    2 |
+| 2726 | Blast                                                                                   |                    2 |
+| 1489 | BlastncbigtService                                                                      |                    2 |
+| 2740 | A_Purva                                                                                 |                    2 |
+| 1726 | getMAS5normalisedDataByNASCArraysSlideService                                           |                    2 |
+|  171 | GoPubMedTermGeneration                                                                  |                    2 |
+|  569 | BlastbtService                                                                          |                    2 |
+| 2697 | Pathway Commons                                                                         |                    2 |
+| 2711 | FlyBase Chado XML Web Service                                                           |                    2 |
+| 2727 | hmmalign                                                                                |                    2 |
+| 2016 | mrsws_blast                                                                             |                    2 |
+| 2742 | JDispatcherService                                                                      |                    2 |
+|   24 | Ensembl                                                                                 |                    2 |
+| 1911 | BlastbtgtService                                                                        |                    2 |
+| 1727 | getNASCArraysExpDescriptionByNASCstockCodeService                                       |                    2 |
+| 2623 | GLANGSoapService                                                                        |                    2 |
+|  593 | RldaService                                                                             |                    2 |
+|  229 | tmapService                                                                             |                    2 |
+| 1996 | SMART                                                                                   |                    2 |
+| 2743 | FASTA (REST)                                                                            |                    2 |
+|  144 | WSBLASTatlas_1_0_ws2                                                                    |                    2 |
+| 1929 | JDispatcherService                                                                      |                    2 |
+|  230 | topoService                                                                             |                    2 |
+|  140 | iHOP_SOAP-rpc-literal                                                                   |                    2 |
+|  128 | WSKalignService                                                                         |                    2 |
+| 2078 | PsicquicService                                                                         |                    2 |
+| 1930 | JDispatcherService                                                                      |                    2 |
+| 2181 | JDispatcherService                                                                      |                    2 |
+| 1909 | ManovaService                                                                           |                    2 |
+| 2165 | Annotate3D                                                                              |                    2 |
+|  149 | AnnotationServiceService                                                                |                    2 |
+|  138 | SearcherWSService                                                                       |                    2 |
+| 1766 | PdbWebServiceService                                                                    |                    2 |
+| 2060 | STRING API                                                                              |                    2 |
+| 2133 | SOAPmoderna                                                                             |                    2 |
+| 2039 | AnalysisServiceService                                                                  |                    2 |
+| 2178 | Dialogue for Reverse Engineering Assessments and Methods                                |                    2 |
+| 2182 | JDispatcherService                                                                      |                    2 |
+|  594 | RpcaService                                                                             |                    2 |
+|  597 | RsvmService                                                                             |                    2 |
+| 1559 | getGeneExpressionByReporterService                                                      |                    2 |
+|  318 | roconService                                                                            |                    2 |
+| 1448 | WSDaliLiteService                                                                       |                    2 |
+|   90 | emmaService                                                                             |                    2 |
+| 2700 | 3DEM-Reference                                                                          |                    2 |
+| 2080 | PsicquicService                                                                         |                    2 |
+| 2746 | PRANK (REST)                                                                            |                    2 |
+|   18 | GTPS                                                                                    |                    2 |
+| 2031 | Hogenom                                                                                 |                    1 |
+| 1926 | ArrayExpress Archive                                                                    |                    1 |
+| 2620 | ACHWebServicesHandlerService                                                            |                    1 |
+|   45 | FetchProDomService                                                                      |                    1 |
+| 2648 | AnalysisWSGowlabImplService                                                             |                    1 |
+|  317 | psiphiService                                                                           |                    1 |
+| 2660 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2676 | AnalysisWSGowlabImplService                                                             |                    1 |
+|  605 | WaterService                                                                            |                    1 |
+| 2692 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2005 | WSPhobiusService                                                                        |                    1 |
+| 2731 | hmmfetch                                                                                |                    1 |
+| 2747 | graphtools                                                                              |                    1 |
+| 2141 | WSMafftService                                                                          |                    1 |
+|   21 | SPS                                                                                     |                    1 |
+| 2022 | Palign                                                                                  |                    1 |
+| 1732 | MicroarrayService                                                                       |                    1 |
+| 2621 | pathway commons                                                                         |                    1 |
+| 2630 | DDBJ_ARSA                                                                               |                    1 |
+| 1719 | RServeAxisService                                                                       |                    1 |
+| 2649 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 1932 | Search                                                                                  |                    1 |
+| 2661 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2677 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2693 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2748 | dbfetch                                                                                 |                    1 |
+| 2140 | ModelProcessorService                                                                   |                    1 |
+| 2034 | AnalysisServiceService                                                                  |                    1 |
+| 2159 | BinarySearchService                                                                     |                    1 |
+| 2019 | Pdb                                                                                     |                    1 |
+| 2618 | Xref                                                                                    |                    1 |
+| 2631 | wsLibrarySearch                                                                         |                    1 |
+|  591 | RankgeneService                                                                         |                    1 |
+| 2650 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 1551 | runBindProteinsService                                                                  |                    1 |
+| 2662 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2678 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2694 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2052 | List the latest version of all ontologies                                               |                    1 |
+| 2724 | TimeCourseService                                                                       |                    1 |
+|   33 | GorI_Service                                                                            |                    1 |
+| 2773 | gassst                                                                                  |                    1 |
+| 2035 | AnalysisServiceService                                                                  |                    1 |
+| 3099 | dkcoin                                                                                  |                    1 |
+| 2044 | Chipster                                                                                |                    1 |
+| 1922 | PromoSerSOAP                                                                            |                    1 |
+| 2610 | runPHDFromBLASTTextService                                                              |                    1 |
+| 2632 | selected entities of the Golm Metabolome Database (GMD)                                 |                    1 |
+| 2651 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2663 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2679 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2695 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2053 | Download a specific version of an ontology from BioPortal                               |                    1 |
+| 2142 | RepositoryWSService                                                                     |                    1 |
+| 2037 | AnalysisServiceService                                                                  |                    1 |
+| 3100 | PsicquicService                                                                         |                    1 |
+| 2030 | SMART                                                                                   |                    1 |
+| 2014 | Proq                                                                                    |                    1 |
+| 1920 | GavinSpokeService                                                                       |                    1 |
+| 2187 | WSPSIBlastService                                                                       |                    1 |
+| 1912 | EbiService                                                                              |                    1 |
+| 2633 | wsPrediction                                                                            |                    1 |
+| 1907 | GorIII_Service                                                                          |                    1 |
+| 2652 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 1339 | ShiftPredictionByPDBfileService                                                         |                    1 |
+| 2664 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2680 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2696 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2054 | List metadata for all versions of a given ontology in BioPortal                         |                    1 |
+| 2705 | Hierarchy Web services                                                                  |                    1 |
+|   50 | PDBjSOAPX                                                                               |                    1 |
+| 2036 | AnalysisServiceService                                                                  |                    1 |
+| 3102 | DBManagerService                                                                        |                    1 |
+|   27 | GO                                                                                      |                    1 |
+| 2013 | Pcons                                                                                   |                    1 |
+| 1921 | LCIService                                                                              |                    1 |
+| 2188 | WSPSISearchService                                                                      |                    1 |
+| 2482 | runEmbossConsFromAlignmentService                                                       |                    1 |
+| 1908 | PhylogeneticnewService                                                                  |                    1 |
+| 2653 | diArk - A resource for eukaryotic genome research                                       |                    1 |
+| 1361 | getColiCardIDs_by_PDBidService                                                          |                    1 |
+| 2665 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2681 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2538 | AnalysisServiceService                                                                  |                    1 |
+| 2055 | Get latest version of an ontology id                                                    |                    1 |
+| 2735 | hmmstat                                                                                 |                    1 |
+|   51 | SeqnaviXSoapApiService                                                                  |                    1 |
+| 2038 | AnalysisServiceService                                                                  |                    1 |
+|   26 | OMIM                                                                                    |                    1 |
+| 2028 | ConservationScorer                                                                      |                    1 |
+| 2338 | runDaliLiteService                                                                      |                    1 |
+|  223 | garnierService                                                                          |                    1 |
+| 2666 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2682 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 1934 | FrontEndService                                                                         |                    1 |
+| 2535 | AnalysisServiceService                                                                  |                    1 |
+| 2056 | PARF- Parallel Random Forest Algorithm                                                  |                    1 |
+|   53 | GOMinerWS                                                                               |                    1 |
+| 2088 | iRefIndex PSICQUIC Service                                                              |                    1 |
+|   52 | GashApiService                                                                          |                    1 |
+|   30 | eFetchPubmedService                                                                     |                    1 |
+| 2146 | pdb2rdf                                                                                 |                    1 |
+|   15 | VecScreen                                                                               |                    1 |
+| 2040 | MassSpecAPI                                                                             |                    1 |
+| 2011 | engineDBService                                                                         |                    1 |
+| 1917 | TreebuilderService                                                                      |                    1 |
+| 2667 | AnalysisWSGowlabImplService                                                             |                    1 |
+|  610 | uniprot                                                                                 |                    1 |
+| 2683 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 1935 | WikiPathways                                                                            |                    1 |
+| 2707 | DDBJ_GIBV                                                                               |                    1 |
+|  414 | blastprodom                                                                             |                    1 |
+|   61 | engineDBService                                                                         |                    1 |
+|    2 | eFetchPmcService                                                                        |                    1 |
+|   28 | RequestManager                                                                          |                    1 |
+| 2175 | OBServerService                                                                         |                    1 |
+| 1916 | UniquesubsService                                                                       |                    1 |
+| 2403 | WSMPsrchService                                                                         |                    1 |
+|  125 | pknotsRGImplementationService                                                           |                    1 |
+|  225 | hmomentService                                                                          |                    1 |
+|   64 | RNAforesterImplementationService                                                        |                    1 |
+| 1906 | Simpa96_Service                                                                         |                    1 |
+| 2668 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 1905 | Coils_Service                                                                           |                    1 |
+| 2684 | AnalysisWSGowlabImplService                                                             |                    1 |
+|  146 | WSEasyGene_1_2a_ws0                                                                     |                    1 |
+|   40 | eFetchGeneService                                                                       |                    1 |
+| 2049 | Online Bioinformatics Resources Collection                                              |                    1 |
+| 2066 | moduleorganizer                                                                         |                    1 |
+|   31 | eFetchNlmcService                                                                       |                    1 |
+| 2780 | JDispatcherService                                                                      |                    1 |
+| 1422 | Blast_Service                                                                           |                    1 |
+|   20 | GIBEnv                                                                                  |                    1 |
+| 2176 | PUG                                                                                     |                    1 |
+| 1629 | NASCArraysGeneswingerByAGAffymetrixProbeSetIDService                                    |                    1 |
+| 2638 | Tuiuiu                                                                                  |                    1 |
+|  226 | pepcoilService                                                                          |                    1 |
+| 2669 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2685 | AnalysisWSGowlabImplService                                                             |                    1 |
+|   39 | eFetchSnpService                                                                        |                    1 |
+| 2057 | ExperimentWebService                                                                    |                    1 |
+| 2067 | TexFlame                                                                                |                    1 |
+| 2723 | BioMart                                                                                 |                    1 |
+| 2739 | SensitivityAnalysisService                                                              |                    1 |
+| 2752 | European Nucleotide Archive (ENA) Browser                                               |                    1 |
+|   36 | eFetchJournalsService                                                                   |                    1 |
+| 2781 | PRECISService                                                                           |                    1 |
+|   22 | TxSearch                                                                                |                    1 |
+| 2177 | compoundsearch_Service                                                                  |                    1 |
+| 2007 | zpredService                                                                            |                    1 |
+| 1913 | XindiceService                                                                          |                    1 |
+| 2617 | DGD                                                                                     |                    1 |
+| 1409 | OligoSelection                                                                          |                    1 |
+| 2642 | AnalysisWSGowlabImplService                                                             |                    1 |
+|  228 | pepwheelService                                                                         |                    1 |
+| 1450 | whatizit                                                                                |                    1 |
+| 2670 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2686 | AnalysisWSGowlabImplService                                                             |                    1 |
+|   38 | eFetchTaxonService                                                                      |                    1 |
+| 2058 | PublicationWebService                                                                   |                    1 |
+|   35 | CronosWSService                                                                         |                    1 |
+| 2753 | JDispatcherService                                                                      |                    1 |
+|   37 | eFetchOmimService                                                                       |                    1 |
+| 2782 | PRECISService                                                                           |                    1 |
+| 2161 | SentenceSplitterService                                                                 |                    1 |
+|   23 | RefSeq                                                                                  |                    1 |
+| 2027 | GlobPlotter                                                                             |                    1 |
+| 2006 | MkDomService                                                                            |                    1 |
+| 1914 | WsfinderService                                                                         |                    1 |
+| 2613 | plotFeatureAASequenceService                                                            |                    1 |
+| 2622 | Entrez search                                                                           |                    1 |
+| 1558 | getExpressionRatioByProbeService                                                        |                    1 |
+| 2643 | AnalysisWSGowlabImplService                                                             |                    1 |
+|  227 | pepnetService                                                                           |                    1 |
+| 1442 | rociImplementationService                                                               |                    1 |
+| 2671 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2687 | AnalysisWSGowlabImplService                                                             |                    1 |
+|  577 | GlimmerService                                                                          |                    1 |
+| 2059 | Mrbws                                                                                   |                    1 |
+| 1410 | WSTMHMM_2_0                                                                             |                    1 |
+| 2760 | Bio2RDF GO SPARQL endpoint                                                              |                    1 |
+| 2144 | Service                                                                                 |                    1 |
+| 1419 | Clustalw_Service                                                                        |                    1 |
+| 2032 | iHOP_SOAP-document-literal                                                              |                    1 |
+| 2179 | JDispatcherService                                                                      |                    1 |
+| 2167 | Plot2D                                                                                  |                    1 |
+| 2644 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 1427 | passtaImplementationService                                                             |                    1 |
+|   32 | termine                                                                                 |                    1 |
+| 2672 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2688 | AnalysisWSGowlabImplService                                                             |                    1 |
+|  578 | GlimmermService                                                                         |                    1 |
+|    9 | DDBJ                                                                                    |                    1 |
+| 1565 | WSEasyGene_1_0                                                                          |                    1 |
+| 2077 | GossMfService                                                                           |                    1 |
+| 2076 | AnalysisWSAppLabImplService                                                             |                    1 |
+| 2765 | Bio2RDF IProClass SPARQL endpoint                                                       |                    1 |
+| 2171 | ArticleSectionClassifierService                                                         |                    1 |
+| 2033 | BioMartSoapService                                                                      |                    1 |
+| 2180 | JDispatcherService                                                                      |                    1 |
+| 1910 | EstapService                                                                            |                    1 |
+| 2166 | Predict2D                                                                               |                    1 |
+| 1731 | GedpService                                                                             |                    1 |
+|  169 | acromine                                                                                |                    1 |
+| 1628 | NASCArraysGeneswingerByATH1AffymetrixProbeSetIDService                                  |                    1 |
+| 2645 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2443 | Pdb                                                                                     |                    1 |
+| 2673 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2689 | AnalysisWSGowlabImplService                                                             |                    1 |
+|  602 | TigrscanService                                                                         |                    1 |
+| 1739 | CYGDAnnotations                                                                         |                    1 |
+| 1566 | WSEasyGene_1_2                                                                          |                    1 |
+| 2062 | npdService                                                                              |                    1 |
+| 2729 | hmmconvert                                                                              |                    1 |
+| 2744 | JDispatcherService                                                                      |                    1 |
+|   70 | TFmodellerServiceService                                                                |                    1 |
+| 2541 | megablastService                                                                        |                    1 |
+| 2798 | NCI/CADD Chemical Identifier Resolver                                                   |                    1 |
+| 2164 | InChI                                                                                   |                    1 |
+| 2172 | PdfToTextService                                                                        |                    1 |
+| 2026 | WSGenomeAtlas_3_0_ws1                                                                   |                    1 |
+|  590 | ProbedesignService                                                                      |                    1 |
+| 2646 | AnalysisWSGowlabImplService                                                             |                    1 |
+|  319 | seqwordsService                                                                         |                    1 |
+| 2658 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2674 | AnalysisWSGowlabImplService                                                             |                    1 |
+|  286 | seqretService                                                                           |                    1 |
+| 2690 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2046 | BioQuali                                                                                |                    1 |
+| 2071 | Online SBML Validator                                                                   |                    1 |
+| 2725 | SteadyStateService                                                                      |                    1 |
+| 2745 | FASTM (REST)                                                                            |                    1 |
+| 2797 | ChEMBL RESTful Web Service                                                              |                    1 |
+| 2169 | AlignSequences                                                                          |                    1 |
+| 2173 | TextCleanerService                                                                      |                    1 |
+| 1931 | WSMaxsproutService                                                                      |                    1 |
+| 2647 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2659 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2675 | AnalysisWSGowlabImplService                                                             |                    1 |
+| 2691 | AnalysisWSGowlabImplService                                                             |                    1 |
+|   65 | QueryService                                                                            |                    1 |
+| 2714 | GetTropgeneDnaSampleSPARQLService                                                       |                    1 |
+|  148 | BINDService                                                                             |                    1 |
+| 2730 | hmmemit                                                                                 |                    1 |
+| 2139 | applyCRFService                                                                         |                    1 |
+| 2769 | InterProScan (REST)                                                                     |                    1 |
+| 2799 | WSScanPSService                                                                         |                    1 |
++------+-----------------------------------------------------------------------------------------+----------------------+
+461 rows in set (0.00 sec)
